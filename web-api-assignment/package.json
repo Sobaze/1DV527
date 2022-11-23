@@ -1,0 +1,31 @@
+{
+  "name": "web-api-assignment",
+  "version": "1.0.0",
+  "description": "In this assignment, we are going to implement a web-API following the theory of REST. We encourage you to have your own ideas about the API service to build. Maybe you have some idea you want to start with trough an API driven design? For those of you without any ideas, we present a scenario below. That will also give a hint of the extent of this assignment.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.lnu.se:1dv527/student/jn223ck/web-api-assignment.git"
+  },
+  "keywords": [],
+  "author": "Jonas Nilsson",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.18",
+    "node-fetch": "^2.6.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

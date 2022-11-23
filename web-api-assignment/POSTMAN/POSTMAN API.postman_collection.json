@@ -1,0 +1,568 @@
+{
+	"info": {
+		"_postman_id": "efa0c8f0-ae88-4a57-9cbf-1227c221aeee",
+		"name": "POSTMAN API",
+		"description": "POSTMAN for describing how to use my API application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"TetrisRetro\",\r\n    \"password\": \"godgamer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"TetrisRetro\",\r\n    \"password\": \"godgamer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/users",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User view",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/users",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user with id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/users/605f3a42f4fec27dd44e9a21",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"users",
+						"605f3a42f4fec27dd44e9a21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"TetrisRetro1\",\r\n    \"password\": \"godgamer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/users/605f3a42f4fec27dd44e9a21",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"users",
+						"605f3a42f4fec27dd44e9a21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/users/605f3a42f4fec27dd44e9a21",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"users",
+						"605f3a42f4fec27dd44e9a21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth user (put token in header as \"auth-token on following calls)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Jonas\",\r\n    \"password\": \"Noober\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/auth",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show bird sighting post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDNmNWRiM2VmZGFlODU4OGM3ZmU0ZmEiLCJleHAiOjE2MTY4NjI2NjgsImlhdCI6MTYxNjg1OTA2OH0.V2zx2miOnQ-HYksEnDOUXZWRNuqSkUuKSySz6xXguoI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/sightings",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"sightings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create bird sighting post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDNmNWRiM2VmZGFlODU4OGM3ZmU0ZmEiLCJleHAiOjE2MTY4NjI2NjgsImlhdCI6MTYxNjg1OTA2OH0.V2zx2miOnQ-HYksEnDOUXZWRNuqSkUuKSySz6xXguoI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Jonas\",\r\n    \"longitude\": 80,\r\n    \"latitude\": 126,\r\n    \"species\": \"Flamingo\",\r\n    \"size\": \"136cm\" ,\r\n    \"description\": \"Flamingo standing in the water on one leg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/sightings",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"sightings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show bird sighting post by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDNmNWRiM2VmZGFlODU4OGM3ZmU0ZmEiLCJleHAiOjE2MTY4NjI2NjgsImlhdCI6MTYxNjg1OTA2OH0.V2zx2miOnQ-HYksEnDOUXZWRNuqSkUuKSySz6xXguoI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Jonas\",\r\n    \"longitude\": 80,\r\n    \"latitude\": 126,\r\n    \"species\": \"Flamingo\",\r\n    \"size\": \"136cm\" ,\r\n    \"description\": \"Flamingo standing in the water on one leg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/sightings/603fa4f4c4bb1b26742400fe",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"sightings",
+						"603fa4f4c4bb1b26742400fe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit bird sighting post",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDNmNWRiM2VmZGFlODU4OGM3ZmU0ZmEiLCJleHAiOjE2MTY4NjI2NjgsImlhdCI6MTYxNjg1OTA2OH0.V2zx2miOnQ-HYksEnDOUXZWRNuqSkUuKSySz6xXguoI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Jonas\",\r\n    \"longitude\": 80,\r\n    \"latitude\": 126,\r\n    \"species\": \"big flamingo\",\r\n    \"size\": \"160cm\" ,\r\n    \"description\": \"Flamingo standing in the water on one leg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/sightings",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"sightings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete bird sighting post",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDNmNWRiM2VmZGFlODU4OGM3ZmU0ZmEiLCJleHAiOjE2MTY4NjI2NjgsImlhdCI6MTYxNjg1OTA2OH0.V2zx2miOnQ-HYksEnDOUXZWRNuqSkUuKSySz6xXguoI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Jonas\",\r\n    \"longitude\": 80,\r\n    \"latitude\": 126,\r\n    \"species\": \"big flamingo\",\r\n    \"size\": \"160cm\" ,\r\n    \"description\": \"Flamingo standing in the water on one leg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/sightings/604689fe08648f0e8c00d46c",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"sightings",
+						"604689fe08648f0e8c00d46c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create webhook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDNmNWRiM2VmZGFlODU4OGM3ZmU0ZmEiLCJleHAiOjE2MTY4NjI2NjgsImlhdCI6MTYxNjg1OTA2OH0.V2zx2miOnQ-HYksEnDOUXZWRNuqSkUuKSySz6xXguoI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://jonas-birdsightings.azurewebsites.net\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/webhook",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Display webhooks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDNmNWRiM2VmZGFlODU4OGM3ZmU0ZmEiLCJleHAiOjE2MTY4NjI2NjgsImlhdCI6MTYxNjg1OTA2OH0.V2zx2miOnQ-HYksEnDOUXZWRNuqSkUuKSySz6xXguoI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://jonas-birdsightings.azurewebsites.net\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/webhook",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send webhooks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDNmNWRiM2VmZGFlODU4OGM3ZmU0ZmEiLCJleHAiOjE2MTY4NjI2NjgsImlhdCI6MTYxNjg1OTA2OH0.V2zx2miOnQ-HYksEnDOUXZWRNuqSkUuKSySz6xXguoI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/webhook/send",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"webhook",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete webhook",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDNmNWRiM2VmZGFlODU4OGM3ZmU0ZmEiLCJleHAiOjE2MTY4NjI2NjgsImlhdCI6MTYxNjg1OTA2OH0.V2zx2miOnQ-HYksEnDOUXZWRNuqSkUuKSySz6xXguoI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jonas-birdsightings.azurewebsites.net/api/webhook/605f5ac2900688004502cc19",
+					"protocol": "https",
+					"host": [
+						"jonas-birdsightings",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"webhook",
+						"605f5ac2900688004502cc19"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

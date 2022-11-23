@@ -1,0 +1,59 @@
+
+## API/USERS
+
+https://jonas-birdsightings.azurewebsites.net/api/users
+
+Is our uri regarding user management in our api.
+It has five different METHODS
+1. GET - to get all users that we have created
+2. POST - we create a new user with this post.
+
+https://jonas-birdsightings.azurewebsites.net/api/users/:id
+3. GET - in this one we do a get in order to get a user by given id for this we need to add the /and the id of the user at the end
+4. DELETE - we delete a user by adding the id of the user.
+5. PATCH - we can edit the information of the user with the given id.
+
+
+## API/Auth
+https://jonas-birdsightings.azurewebsites.net/api/auth
+
+Here we log in our user in order to get an auth token that will be needed in our following apis.
+We need to include this token in the header and name it "auth-token"
+
+## API/Sightings
+
+https://jonas-birdsightings.azurewebsites.net/api/sightings
+
+Here we will be able to show post regarding bird sightings. 
+
+**Important Note**
+Remember to make sure that in the header there exist an "auth-token" and value that we got from the auth.
+
+This has five different METHODS
+1. GET - here we get a list of all posts of bird sightings, it will list what user saw it, type of bird, size,
+ the cordinates it was seen and list a desciption of it.
+
+2. POST - This will create a new post of a bird sightings 
+
+https://jonas-birdsightings.azurewebsites.net/api/sightings/:id
+
+3. GET - Get a specific post from the id of the post.
+4. PATCH - Edit the specific post with the entered id. 
+5. DELETE - Delete the specific post with the entered id.
+
+## API/Webhook
+https://jonas-birdsightings.azurewebsites.net/api/webhook
+
+**Important Note**
+Remember to make sure that in the header there exist an "auth-token" and value that we got from the auth.
+
+This will be able to manage our webhook configs.
+This has four METHODS
+1. GET - Get a list of all the webhooks that we have.
+2. POST - Creates a new webhook
+
+https://jonas-birdsightings.azurewebsites.net/api/webhook/send
+3. POST - this will make so our webhook will be able to see the latest sighting post that will be created.
+
+https://jonas-birdsightings.azurewebsites.net/api/webhook/:id
+4. DELETE - Here we can delete specific webhook by entering specific id of it.
